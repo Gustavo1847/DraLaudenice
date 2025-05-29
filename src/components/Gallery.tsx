@@ -1,0 +1,105 @@
+
+import { Eye, ArrowRight } from "lucide-react";
+
+const Gallery = () => {
+  const cases = [
+    {
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Harmonização do Sorriso",
+      description: "Transformação completa com lentes de contato dental e clareamento."
+    },
+    {
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Reabilitação Oral",
+      description: "Tratamento com próteses e implantes para devolver função e estética."
+    },
+    {
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Estética Dental",
+      description: "Correção de formato e cor dos dentes com facetas em porcelana."
+    },
+    {
+      before: "/placeholder.svg",
+      after: "/placeholder.svg",
+      title: "Cirurgia e Implante",
+      description: "Substituição de dente perdido com implante e coroa em porcelana."
+    }
+  ];
+
+  return (
+    <section id="galeria" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Antes e Depois
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Veja os resultados reais dos nossos tratamentos e inspire-se com as transformações
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto mt-6"></div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {cases.map((case_item, index) => (
+            <div 
+              key={index}
+              className="bg-gradient-to-br from-gray-50 to-rose-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full flex items-center justify-center">
+                    <Eye className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">{case_item.title}</h3>
+                    <p className="text-sm text-gray-600">{case_item.description}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <img 
+                    src={case_item.before} 
+                    alt="Antes do tratamento" 
+                    className="w-full h-48 object-cover rounded-xl"
+                  />
+                  <p className="text-sm font-medium text-gray-700 text-center">Antes</p>
+                </div>
+                
+                <div className="flex items-center justify-center">
+                  <ArrowRight className="w-8 h-8 text-rose-400" />
+                </div>
+
+                <div className="space-y-2">
+                  <img 
+                    src={case_item.after} 
+                    alt="Depois do tratamento" 
+                    className="w-full h-48 object-cover rounded-xl"
+                  />
+                  <p className="text-sm font-medium text-gray-700 text-center">Depois</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a 
+            href="https://wa.me/5583998003674" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-rose-400 to-pink-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-rose-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Quero transformar meu sorriso também
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Gallery;
