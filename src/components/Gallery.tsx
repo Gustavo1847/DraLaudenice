@@ -33,28 +33,28 @@ const Gallery = () => {
     <section id="galeria" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-[#3D3D3D] mb-4">
             Antes e Depois
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Veja os resultados reais dos nossos tratamentos e inspire-se com as transformações
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] mx-auto mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {cases.map((case_item, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-rose-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-gradient-to-br from-[#FFFDF9] to-[#F5F0E8] rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#E8C2A0]"
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center">
                     <Eye className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">{case_item.title}</h3>
+                    <h3 className="text-xl font-bold text-[#3D3D3D]">{case_item.title}</h3>
                     <p className="text-sm text-gray-600">{case_item.description}</p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const Gallery = () => {
                 </div>
                 
                 <div className="flex items-center justify-center">
-                  <ArrowRight className="w-8 h-8 text-rose-400" />
+                  <ArrowRight className="w-8 h-8 text-[#B88A44]" />
                 </div>
 
                 <div className="space-y-2">
@@ -92,7 +92,7 @@ const Gallery = () => {
             href="https://wa.me/5583998003674" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-rose-400 to-pink-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-rose-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#E8C2A0] text-[#3D3D3D] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#D4A974] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             Quero transformar meu sorriso também
           </a>
