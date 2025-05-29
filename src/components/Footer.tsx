@@ -12,7 +12,7 @@ const Footer = () => {
               Transformando sorrisos e elevando autoestima através da odontologia de excelência em João Pessoa, PB.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center hover:from-[#9C7238] hover:to-[#D4A974] transition-all">
+              <a href="https://www.instagram.com/dralaudenice?igshid=YzAwZjE1ZTI0Zg%3D%3D" className="w-10 h-10 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center hover:from-[#9C7238] hover:to-[#D4A974] transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gradient-to-r from-[#E8C2A0] to-[#B88A44] rounded-full flex items-center justify-center hover:from-[#D4A974] hover:to-[#9C7238] transition-all">
@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2024 Dra. Laudenice. Todos os direitos reservados.
+              © 2025 Dra. Laudenice. Todos os direitos reservados.
             </p>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <span>Feito com</span>

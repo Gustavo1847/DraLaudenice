@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import Insta from "@/components/Insta";
 
 const Index = () => {
   return (

@@ -72,12 +72,12 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#E8C2A0] to-[#B88A44] rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/Perfil.jpg" 
                   alt="Dra. Laudenice" 
-                  className="w-full h-96 object-cover rounded-2xl"
+                  className="w-full h-96 object-cover object-top rounded-2xl"
                 />
                 <div className="mt-6 text-center">
-                  <h3 className="text-2xl font-bold text-[#3D3D3D]">Dra. Laudenice</h3>
+                  <h3 className="text-2xl font-bold text-[#3D3D3D]">Dra. Laudenice Lucena</h3>
                   <p className="text-[#B88A44] font-medium">Cirurgiã-Dentista</p>
                   <p className="text-sm text-gray-600 mt-2">João Pessoa, PB</p>
                 </div>

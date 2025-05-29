@@ -4,29 +4,17 @@ import { Eye, ArrowRight } from "lucide-react";
 const Gallery = () => {
   const cases = [
     {
-      before: "/placeholder.svg",
-      after: "/placeholder.svg",
+      before: "/antes1.png",
+      after: "/depois1.png",
       title: "Harmonização do Sorriso",
       description: "Transformação completa com lentes de contato dental e clareamento."
     },
     {
-      before: "/placeholder.svg",
-      after: "/placeholder.svg",
+      before: "/antes2.png",
+      after: "/depois2.png",
       title: "Reabilitação Oral",
       description: "Tratamento com próteses e implantes para devolver função e estética."
     },
-    {
-      before: "/placeholder.svg",
-      after: "/placeholder.svg",
-      title: "Estética Dental",
-      description: "Correção de formato e cor dos dentes com facetas em porcelana."
-    },
-    {
-      before: "/placeholder.svg",
-      after: "/placeholder.svg",
-      title: "Cirurgia e Implante",
-      description: "Substituição de dente perdido com implante e coroa em porcelana."
-    }
   ];
 
   return (
@@ -60,29 +48,30 @@ const Gallery = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center justify-center gap-2">
+                {/* Imagem Antes */}
                 <div className="space-y-2">
                   <img 
                     src={case_item.before} 
                     alt="Antes do tratamento" 
-                    className="w-full h-48 object-cover rounded-xl"
+                    className="w-70 h-70 object-cover rounded-xl"
                   />
                   <p className="text-sm font-medium text-gray-700 text-center">Antes</p>
                 </div>
-                
-                <div className="flex items-center justify-center">
-                  <ArrowRight className="w-8 h-8 text-[#B88A44]" />
-                </div>
 
+                {/* Seta central */}
+                <ArrowRight className="w-40 h-40 text-[#B88A44] mx-1" />
+
+                {/* Imagem Depois */}
                 <div className="space-y-2">
                   <img 
                     src={case_item.after} 
                     alt="Depois do tratamento" 
-                    className="w-full h-48 object-cover rounded-xl"
+                    className="w-70 h-70 object-cover rounded-xl"
                   />
                   <p className="text-sm font-medium text-gray-700 text-center">Depois</p>
                 </div>
-              </div>
+              </div>      
             </div>
           ))}
         </div>
