@@ -54,7 +54,7 @@ const Hero = () => {
 
             <div className="space-y-4">
               <a 
-                href="https://wa.me/5583998003674" 
+                href="https://wa.me/83982210377" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-[#E8C2A0] text-[#3D3D3D] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#D4A974] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"

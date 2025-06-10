@@ -38,7 +38,7 @@ const Navigation = () => {
                 Contato
               </button>
               <a 
-                href="https://wa.me/5583998003674" 
+                href="https://wa.me/83982210377" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#E8C2A0] text-[#3D3D3D] px-6 py-2 rounded-full hover:bg-[#D4A974] transition-all duration-300 transform hover:scale-105"
@@ -78,7 +78,7 @@ const Navigation = () => {
               Contato
             </button>
             <a 
-              href="https://wa.me/5583998003674" 
+              href="https://wa.me/83982210377" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block mx-3 my-2 bg-[#E8C2A0] text-[#3D3D3D] px-6 py-2 rounded-full text-center hover:bg-[#D4A974] transition-all duration-300"
