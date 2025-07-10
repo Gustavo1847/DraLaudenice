@@ -72,7 +72,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#E8C2A0] to-[#B88A44] rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
                 <img 
-                  src="/Perfil.jpg" 
+                  src="/Imagens/Dra/Perfil-01.jpeg" 
                   alt="Dra. Laudenice" 
                   className="w-full h-96 object-cover object-top rounded-2xl"
                 />

@@ -16,13 +16,13 @@ const About = () => {
       <div className="space-y-8">
         <div className="prose prose-lg">
           <p className="text-xl text-gray-700 leading-relaxed">
-            Com ampla formação acadêmica e mais de uma década de experiência,
+            Com ampla formação acadêmica e mais de 20 anos de experiência,
             <span className="font-semibold text-[#B88A44]"> Dra. Laudenice Lucena </span>
-            oferece atendimento humanizado e técnico nas áreas de odontologia estética, cirurgia e prevenção.
+            oferece atendimento humanizado e técnico nas áreas de odontologia estética, cirúrgica e preventiva.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Graduada pela <strong>UFPB</strong>, é Doutora em Patologia Oral pela <strong>UFRN </strong> 
-            e Mestre em Diagnóstico Oral pela <strong>UFPB</strong>. Especialista em <strong>odontologia estética</strong>,
+            e Mestre em Diagnóstico Oral pela <strong>UFPB</strong>. Especialista em <strong>odontologia estética </strong>e <strong>odontologia hospitalar, </strong>
             habilitada em <strong>Laserterapia e terapias fotodinâmicas</strong>, alia excelência técnica, empatia e constante atualização.
           </p>
         </div>
@@ -66,7 +66,7 @@ const About = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-br from-[#E8C2A0] to-[#B88A44] rounded-3xl transform -rotate-3"></div>
           <img 
-            src="/im1.jpg" 
+            src="/Imagens/Dra/Perfil-02.jpeg" 
             alt="Dra. Laudenice Lucena" 
             className="relative w-full h-96 object-cover rounded-3xl shadow-2xl"
           />

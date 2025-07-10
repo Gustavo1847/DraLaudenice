@@ -1,17 +1,20 @@
 
 import { Eye, ArrowRight } from "lucide-react";
-
+/**
+ * Cases gallery
+ * @returns  
+ */
 const Gallery = () => {
   const cases = [
     {
-      before: "/antes1.png",
-      after: "/depois1.png",
+      before: "/Imagens/AntesDepois/Antes-01.jpeg",
+      after: "/Imagens/AntesDepois/Depois-01.jpeg",
       title: "Harmonização do Sorriso",
       description: "Transformação completa com lentes de contato dental e clareamento."
     },
     {
-      before: "/antes2.png",
-      after: "/depois2.png",
+      before: "/Imagens/AntesDepois/Antes-02.jpeg",
+      after: "/Imagens/AntesDepois/Depois-02.jpeg",
       title: "Reabilitação Oral",
       description: "Tratamento com próteses e implantes para devolver função e estética."
     },
@@ -75,7 +78,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-
+        {/* Botão Final */}
         <div className="text-center mt-12">
           <a 
             href="https://wa.me/83982210377" 

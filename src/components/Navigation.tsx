@@ -16,7 +16,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <img src="/favicon.png" className="w-12 h-auto" alt="Logo" />
+            <img src="/Imagens/favicon.png" className="w-12 h-auto" alt="Logo" />
             <span className="text-2xl font-bold text-[#3D3D3D]">Dra. Laudenice Lucena</span>
           </div>
           
