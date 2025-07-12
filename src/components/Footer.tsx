@@ -7,7 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Dra. Laudenice</h3>
+            <div className="flex items-center space-x-2">
+              <img src="https://dralaudenice.com.br/Imagens/logo.png" className="w-12 h-auto" alt="Logo" />
+              <span className="text-2xl font-bold text-gray-300">Dra. Laudenice Lucena</span>
+            </div>
             <p className="text-gray-300 leading-relaxed">
               Transformando sorrisos e elevando autoestima através da odontologia de excelência em João Pessoa, PB.
             </p>
@@ -52,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8">
+        <div className="border-t border-gray-500 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2025 Dra. Laudenice. Todos os direitos reservados.
