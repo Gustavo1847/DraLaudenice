@@ -1,4 +1,7 @@
 /* ABOUT SECTION */
+#sobre {
+  scroll-margin-top: 64px; /* altura do seu navbar fixo */
+}
 
 .about-section {
   background: #fff;
@@ -8,7 +11,7 @@
   align-items: center;
 }
 .about-container {
-  max-width: 90rem;
+  max-width: 1120px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;

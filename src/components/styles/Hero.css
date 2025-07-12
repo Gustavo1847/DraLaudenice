@@ -1,3 +1,7 @@
+
+#inicio {
+  scroll-margin-top: 64px; /* altura do seu navbar fixo */
+}
 .hero-section {
   background: linear-gradient(135deg, #FFFDF9 0%, #FFFFFF 50%, #F5F0E8 100%);
   margin-top: 64px;
@@ -118,14 +122,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .hero-card-bg {
   position: absolute;
   top: 32px;
   left: 32px;
-  width: 90%;
+  width: 85%;
   height: 90%;
   background: linear-gradient(100deg, #E8C2A0, #B88A44);
   border-radius: 32px;
@@ -137,7 +141,7 @@
   position: relative;
   background: #fff;
   border-radius: 32px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 6px 32px 0 #00000016;
   z-index: 2;
   width: 320px;
@@ -152,8 +156,8 @@
   height: 350px;
   object-fit: cover;
   border-radius: 24px;
-  margin-bottom: 1.5rem;
   object-position: top;
+  margin-bottom: 1rem;
 }
 
 .hero-card-info {
