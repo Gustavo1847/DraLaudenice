@@ -41,8 +41,8 @@ const Gallery = () => {
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center">
-                    <Eye className="w-6 h-6 text-white" />
+                  <div className="w-14 aspect-square bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center">
+                    <Eye className="w-8 aspect-square text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[#3D3D3D]">{case_item.title}</h3>
