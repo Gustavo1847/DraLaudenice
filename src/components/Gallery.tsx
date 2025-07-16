@@ -1,4 +1,4 @@
-
+import "./styles/Gallery.css";
 import { Eye, ArrowRight } from "lucide-react";
 /**
  * Cases gallery
@@ -7,16 +7,16 @@ import { Eye, ArrowRight } from "lucide-react";
 const Gallery = () => {
   const cases = [
     {
-      before: "/Imagens/AntesDepois/Antes-01.jpeg",
-      after: "/Imagens/AntesDepois/Depois-01.jpeg",
-      title: "Harmonização do Sorriso",
-      description: "Transformação completa com lentes de contato dental e clareamento."
+      before: "/Imagens/AntesDepois/Antes-01.jpg",
+      after: "/Imagens/AntesDepois/Depois-01.jpg",
+      title: "Restauração Estética de Fratura",
+      description: "Reconstrução do dente fraturado com acabeamento estético natural."
     },
     {
-      before: "/Imagens/AntesDepois/Antes-02.jpeg",
-      after: "/Imagens/AntesDepois/Depois-02.jpeg",
-      title: "Reabilitação Oral",
-      description: "Tratamento com próteses e implantes para devolver função e estética."
+      before: "/Imagens/AntesDepois/Antes-02.jpg",
+      after: "/Imagens/AntesDepois/Depois-02.jpg",
+      title: "Rejuvenescimento do Sorriso",
+      description: "Harmonização para um sorriso mais jovem e leve."
     },
   ];
 
@@ -33,16 +33,16 @@ const Gallery = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] mx-auto mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {cases.map((case_item, index) => (
             <div 
               key={index}
               className="bg-gradient-to-br from-[#FFFDF9] to-[#F5F0E8] rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#E8C2A0]"
             >
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 mb-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-14 aspect-square bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center">
-                    <Eye className="w-8 aspect-square text-white" />
+                  <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-[#B88A44] to-[#E8C2A0] rounded-full flex items-center justify-center">
+                    <Eye className="w-8 h-8 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[#3D3D3D]">{case_item.title}</h3>
@@ -57,20 +57,20 @@ const Gallery = () => {
                   <img 
                     src={case_item.before} 
                     alt="Antes do tratamento" 
-                    className="w-70 h-70 object-cover rounded-xl"
+                    className="w-full max-w-[300px] aspect-[4/3] object-cover rounded-xl"
                   />
                   <p className="text-sm font-medium text-gray-700 text-center">Antes</p>
                 </div>
 
                 {/* Seta central */}
-                <ArrowRight className="w-40 h-40 text-[#B88A44] mx-1" />
+                <ArrowRight className="min-h-8 min-w-8 text-[#B88A44] mx-1" />
 
                 {/* Imagem Depois */}
                 <div className="space-y-2">
                   <img 
                     src={case_item.after} 
                     alt="Depois do tratamento" 
-                    className="w-70 h-70 object-cover rounded-xl"
+                    className="w-full max-w-[300px] aspect-[4/3] object-cover rounded-xl"
                   />
                   <p className="text-sm font-medium text-gray-700 text-center">Depois</p>
                 </div>

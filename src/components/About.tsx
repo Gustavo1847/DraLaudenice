@@ -11,8 +11,19 @@ const About = () => {
           </h2>
           <div className="about-title-underline"></div>
         </div>
-
+        {/* Imagem */}
         <div className="about-grid">
+          <div className="about-image-col">
+            <div className="about-image-wrap">
+              <img 
+                src="/Imagens/Dra/Perfil-02.jpeg" 
+                alt="Dra. Laudenice Lucena" 
+                className="about-image-img"
+              />
+              <div className="about-image-bg"></div>
+            </div>
+          </div>
+          {/* Texto */}
           <div className="about-text-col">
             <div>
               <p className="about-description">
@@ -56,17 +67,6 @@ const About = () => {
                   Ética, excelência e cuidado personalizado.
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="about-image-col">
-            <div className="about-image-wrap">
-              <img 
-                src="/Imagens/Dra/Perfil-02.jpeg" 
-                alt="Dra. Laudenice Lucena" 
-                className="about-image-img"
-              />
-              <div className="about-image-bg"></div>
             </div>
           </div>
         </div>

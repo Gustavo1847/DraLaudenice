@@ -1,8 +1,9 @@
-
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Import, Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navigation = () => {
+  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -13,15 +14,23 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-10 xl:px-14">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
-            <img src="https://dralaudenice.com.br/Imagens/logo.png" className="w-12 h-auto" alt="Logo" />
-            <span className="text-2xl font-bold text-[#3D3D3D]">Dra. Laudenice Lucena</span>
+          {/* LOGO */}
+          <div className="flex items-center space-x-3">
+            <img 
+              src="https://dralaudenice.com.br/Imagens/logo.png" 
+              className="w-10 md:w-12 lg:w-14 h-auto" 
+              alt="Logo" 
+            />
+            <span className={`font-bold text-[#3D3D3D] ${isMobile ? "text-lg min-w-[160px]" : "text-2xl min-w-[180px]"}`}>
+              Dra. Laudenice Lucena
+            </span>
           </div>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          {/* MENU DESKTOP */}
+          <div className="hidden md:flex">
+            <div className={`ml-4 flex items-center ${isMobile ? "space-x-4" : "space-x-4 lg:space-x-8"} ${!isMobile && "py-2"}`}>
               <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-[#B88A44] transition-colors">
                 Início
               </button>
@@ -41,27 +50,29 @@ const Navigation = () => {
                 href="https://wa.me/83982210377" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-[#E8C2A0] text-[#3D3D3D] px-6 py-2 rounded-full hover:bg-[#D4A974] transition-all duration-300 transform hover:scale-105"
+                className="whitespace-nowrap bg-[#E8C2A0] text-[#3D3D3D] px-5 py-2 rounded-full hover:bg-[#D4A974] transition-all duration-300 transform hover:scale-105"
               >
-                Agendar Consulta
+                {isMobile ? "Agendar" : "Agendar Consulta"}
               </a>
             </div>
           </div>
           
+          {/* MENU MOBILE */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-[#B88A44]"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
       </div>
 
+      {/* MOBILE DROPDOWN */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-3 pt-3 pb-4 space-y-2">
             <button onClick={() => scrollToSection('inicio')} className="block px-3 py-2 text-gray-700 hover:text-[#B88A44] w-full text-left">
               Início
             </button>
